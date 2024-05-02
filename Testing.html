@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Information</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        // Define variables for name, nickname, and age
+        var name = "John Doe";
+        var nickname = "JD";
+        var age = 30;
+
+        // Construct the output message with placeholders
+        var message = `
+            <p>Hello! My name is "${name}" and my nickname is "${nickname}".<br>
+            I'm ${age} years old.</p>
+        `;
+
+        // Display the message inside the 'output' div
+        document.getElementById('output').innerHTML = message;
+    </script>
+</body>
+</html>

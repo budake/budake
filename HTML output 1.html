@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Display as HTML output</title>
+    </head>
+    <body>
+        <div id="output"></div>
+        <script>
+            // Define variables for name, nickname, and age
+            var name = "Ahmad Azib";
+            var nickname = "Zibou";
+            var age = 20;
+            var state = "Subang";
+            var mname = "Rosliza";
+            var fname = "Azmi";
+    
+            // Construct the output message with placeholders
+            var message = `
+                <p>Hello! My name is ${name} and my nickname is "${nickname}".<br>
+                   This year I am ${age} years old.<br>
+                   I currently live in ${state}.<br>
+                   My mother's name is ${mname} & my father's name is ${fname}.</p>
+            `;
+    
+            // Display the message inside the 'output' div
+            document.getElementById('output').innerHTML = message;
+        </script>
+    </body>
+</html>    
+
+    
